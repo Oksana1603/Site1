@@ -6,38 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>reading</title>
     <style>
-        li{
+        .menu{
             display: inline;
             text-align:center;
             padding:50px;
             
         }
-        
+dt{
+    list-style-type:square;
+}
+dd{
+    color: navy;
+    padding:0.25;
+
+}
     </style>
 </head>
 <body>
-    <header style="text-align:center; font-size:200px;">
+    <header style="text-align:center; font-size:10vw;">
         the reader 
     </header>
-<div> <ul style="list-style-type:none; font-size:50px; text-align: center; display:inline;padding:60px">
-         <li>Home</li>
-         <li>News</li>
-         <li><a href ="/test.html">Test</a></li>
-         <li>Forum</li>
-         <li>Extra</li>
+<nav> <ul style="list-style-type:none; font-size:3vw; text-align: center; display:inline; padding:40px">
+         <li class="menu">Home</li>
+         <li class="menu">News</li>
+         <li class="menu"><a href ="test.html" target="_blank">Test</a></li>
+         <li class="menu">Forum</li>
+         <li class="menu"><a href ="introvert.html" target="_blank">Extra</a></li>
          
         
-    </ul> </div>  
-<br>
+    </ul> </nav>  
+    <br>
+<main>
 <section>
-<aside style="width:20%; float:left; display:block;">
-    <img src="images/too peopley.jpg" width="270px"></img>
-    
-    
-</aside>    
-<article style="padding:30px; width:80%; display:block;">
+<div class="column" style="width:20%; float:left;">
+    <img src="images/peopley.jpg" width="270" alt= "sorry!">
+    <img src= "images/coffee.jpg" width="270" alt="sorry!">
+    <a href ="introvert.html" target="_self"><img src="images/introvert.jpg" width="270" alt ="sorry!"></a>
+</div>       
+
+<article style="padding:5px; width:80%; display:block;">
         <h1>Why do we read</h1>
-        <p>Reading is a weird process. For the longest time in the history most of the people didn`t know how to read. Most of the people throughout history didn`t know how to read silently.... </p>        
+        <p>Hello! So, you are here! That means you like <del>taking a nap on a book</del> reading. Reading is a weird process. For the longest time in the history most of the people didn`t know how to read. Most of the people throughout history didn`t know how to read silently.... </p>        
 <table border="3">
      <tr>
         <th>A Book</th>
@@ -60,8 +69,30 @@
          <td>Lucie, Sydney Carton, Dr. Manette, Charles Darnay... </td>
     </tr>
 </table>
+        <h1>Is reading good for you?</h1>
+        <p>There is a number of perks to reading.</p>
+        <ol type="1" reversed>
+            <li>Entertainment</li>
+            <li>Learning new things</li>
+            <li>Broadening one`s vocabulary</li>
+            <li>Ability to concentrate</li>
+            <li>Relieving stress</li>
+            <li>Practicing compassion</li>
+        </ol>
+    <p>But how cat you find time for reading in such a hectic time? <strong>The Reader</strong> will help you. Here are few ideas:</p>
+   <dl>
+       <dt >Read while commuting</dt>
+       <dd>Yes, we know. Sometimes the bus is crowded. Sometimes you just want to snooze. But sometimes it is not. Make your commute more fun with abook! And, if you are using e-book, you won`t have to worry about carrying a heavy tomme!</dd>
+       <dt>Read before you go to sleep</dt>
+       <dd>It`s not about a number of pages. It`s about a habit. <abbr>Btw</abbr>, it also helps you relax.</dd>
+       <dt>Start using audiobooks</dt>
+       <dd>Yes, that`s not for everyone, but give it a try. Try different books, so you can find a voice and intonation that work for you</dd>
+       <dt>Write notes</dt>
+       <dd>I hear you: you don`t really want to feel like back to school. But noone tells you to writes school type of notes. Write your own reflexions or use Mindmapping technique. Make them very concise. The process of summarising helps your brain store memories better. That makes reading more useful.</dd>
+   </dl>
 </article>
+
 </section>
-    
+</main>    
 </body>
 </html>
