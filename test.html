@@ -9,17 +9,17 @@
 <body>
     <h1>Test</h1>
     <p1>Before attempting to do the test, please fill in your personal information</p1>
-    <form method="POST" action="https://formspree.io/deepsky809@gmail.com">>
-        <input type="text" name="first name" placeholder="Your name"/>
-        <input type="text" name="last name"placeholder="Your last name"/>
-        <input type="email" name="email" placeholder ="Your email"/>
+    <form method="POST" action="https://formspree.io/deepsky809@gmail.com">
+        <input type="text" name="first name" placeholder="Your name" required autofocus/>
+        <input type="text" name="last name"placeholder="Your last name" required/>
+        <input type="email" name="email" placeholder ="Your email" />
         <br>
         When should we send you a birthday-present discount? 
         <input type="date" name="bday"/><br>
         What is your favourite colour?
         <input type="color" name="fav.color"><br>
         <p1>Now, please create a password</p1>
-        <input type="password" name="password" placeholder="Your password"/>
+        <input type="password" name="password" placeholder="Your password" required minlength="5"/>
         <br>
         <p1>Please, indicate your educational level</p1><br>
         <input type="radio" name="Middle sch"/> <label for="last name">Middle school graduate</label><br>
@@ -41,6 +41,12 @@
             <option value="weekend">once a week</option>
             <option value="rare">once a month or less</option>
         </select>
+        <br>
+        <p1>Please, write us about your preferences and any additional information</p1><br>
+        <input type="text" name="message" style="width:200; height:200; background-color:yellow;">
+        <br>
+        <p>Please, upload your article and a photo</p>
+        <input type="file" name="additional" multiple>
         <input type="submit" value="Submit"/>
    
     </form>
