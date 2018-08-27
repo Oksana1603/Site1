@@ -8,45 +8,44 @@
 </head>
 <body>
     <h1>Test</h1>
-    <p1>Before attempting to do the test, please fill in your personal information</p1>
-    <form method="POST" action="https://formspree.io/deepsky809@gmail.com">
-        <input type="text" name="first name" placeholder="Your name" required autofocus/>
-        <input type="text" name="last name"placeholder="Your last name" required/>
-        <input type="email" name="email" placeholder ="Your email" />
-        <br>
-        When should we send you a birthday-present discount? 
-        <input type="date" name="bday"/><br>
-        What is your favourite colour?
-        <input type="color" name="fav.color"><br>
-        <p1>Now, please create a password</p1>
-        <input type="password" name="password" placeholder="Your password" required minlength="5"/>
-        <br>
-        <p1>Please, indicate your educational level</p1><br>
-        <input type="radio" name="Middle sch"/> <label for="last name">Middle school graduate</label><br>
-        <input type="radio" name="High sch"/> <label>High school graduate</label> <br>
-        <input type="radio" name="Bachelor"/> <label>Bachelor`s degree</label><br>
-        <input type="radio" name="Master"/> <label>Master`s degree</label><br>
-        <input type="radio" name="Ph.D"/> <label>Ph.D and higher</label><br>
-        <p1>Now, please choose all that apply to you</p1><br>
-        <input type="checkbox" name="fantasy"/> <label>I love fantasy books</label><br>
-        <input type="checkbox" name="history"/> <label>I enjoy history novels</label><br>        
-        <input type="checkbox" name="self-help"/> <label>I love self-help literature</label><br>
-        <input type="checkbox" name="psychology"/> <label>I love reading texts that explore psychology of people</label><br>
-        <input type="checkbox" name="nonfiction"/> <label>I like reading about events that really happened</label><br>
-        <input type="checkbox" name="aspiring writer"/> <label>I would like to write a book someday</label><br>    
-        <p1>How often do you read?</p1>
-        <select name="frequency">
-            <option value="regular">every day</option>
-            <option value="semiregular">twice or three times a week</option>
-            <option value="weekend">once a week</option>
-            <option value="rare">once a month or less</option>
+        <p>Before attempting to do the test, please fill in your personal information</p>
+        <form method="POST" action="https://formspree.io/deepsky809@gmail.com">
+            <input type="text" name="first name" placeholder="Your name" required autofocus/>
+            <input type="text" name="last name" placeholder="Your last name" required/>
+            <input type="email" name="email" placeholder ="Your email" />
+            <br>
+            <label for="bday">When should we send you a birthday-present discount?</label>         
+            <input type="date" name="bday" id="bday"/><br>
+            <label for="color">What is your favourite colour?</label>
+            <input type="color" name="fav.color" id="color"><br>
+            <label for="pass">Now, please create a password</label>
+            <input type="password" name="password" id="pass" placeholder="Your password" required minlength="5"/><br>
+            <label for="middle">Please, indicate your educational level</label><br>
+            <input type="radio" name="school" id="middle" value="Middle sch"/> <label for="middle">Middle school graduate</label><br>
+            <input type="radio" name="school" id="high" value="High sch"/> <label for="high">High school graduate</label> <br>
+            <input type="radio" name="school" id="bachelor" value="Bachelor"/> <label for="bachelor">Bachelor`s degree</label><br>
+            <input type="radio" name="school" id="master" value="Master"/> <label for="master">Master`s degree</label><br>
+            <input type="radio" name="school" id="phd" value="Ph.D"/> <label for="phd">Ph.D and higher</label><br>
+            <label for="fantasy">Now, please choose all that apply to you</label><br>
+            <input type="checkbox" name="fantasy" id="fantasy"/> <label for="fantasy">I love fantasy books</label><br>
+            <input type="checkbox" name="history" id="history"/> <label for="history">I enjoy history novels</label><br>        
+            <input type="checkbox" name="self-help" id="self-help"/> <label for="self-help">I love self-help literature</label><br>
+            <input type="checkbox" name="psychology" id="psychology"/> <label for="psychology">I love reading texts that explore psychology of people</label><br>
+            <input type="checkbox" name="nonfiction" id="nonfiction"/> <label for="nonfiction">I like reading about events that really happened</label><br>
+            <input type="checkbox" name="aspiring writer" id="write"/> <label for="write">I would like to write a book someday</label><br>    
+            <label for="frequency">How often do you read?</label>
+            <select name="frequency" id="frequency">
+                <option value="regular">every day</option>
+                <option value="semiregular">twice or three times a week</option>
+                <option value="weekend">once a week</option>
+                <option value="rare">once a month or less</option>
         </select>
         <br>
-        <p1>Please, write us about your preferences and any additional information</p1><br>
-        <input type="text" name="message" style="width:200; height:200; background-color:yellow;">
+        <label for="message">Please, write us about your preferences and any additional information</label><br>
+        <input type="text" name="message" id="message" style="background-color:yellow;">
         <br>
-        <p>Please, upload your article and a photo</p>
-        <input type="file" name="additional" multiple>
+        <label for="file">Please, upload your article and a photo</label>
+        <input type="file" id="file" name="additional" multiple>
         <input type="submit" value="Submit"/>
    
     </form>
